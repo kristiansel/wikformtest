@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hotel Booking Instructions</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    :root { --accent:#0b5fff; --bg:#f8f9fa; --border:#d0d7de; }
+    body { font-family: Arial, sans-serif; margin:0; line-height:1.45; background:var(--bg); }
+    header { background:#ffffff; border-bottom:1px solid var(--border); padding:1rem 1.25rem; }
+    header h1 { margin:0 0 .25rem; font-size:1.6rem; }
+    nav a { margin-right:1rem; text-decoration:none; color:var(--accent); font-weight:600; }
+    main { max-width:860px; margin:0 auto; padding:1.25rem 1.25rem 3rem; background:#fff; }
+    section { margin-top:2rem; }
+    h2 { margin:.5rem 0 .75rem; font-size:1.25rem; border-bottom:2px solid var(--border); padding-bottom:.3rem; }
+    pre { background:#fff; border:1px solid var(--border); padding:.75rem 1rem; overflow-x:auto; white-space:pre-wrap; }
+    ul.link-list { list-style:disc; margin:.75rem 0 1.5rem 1.25rem; padding:0; }
+    a.button { display:inline-block; margin:.4rem .6rem .4rem 0; padding:.55rem .9rem; border:1px solid var(--accent); border-radius:6px; text-decoration:none; color:var(--accent); font-weight:600; font-size:.95rem; }
+    a.button:hover { background:var(--accent); color:#fff; }
+    footer { text-align:center; font-size:.8rem; color:#555; margin:2.5rem 0 0; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hotel Booking Experiment</h1>
+    <nav>
+      <a href="index1.html">Form 1 (Single Page)</a>
+      <a href="index2.html">Form 2 (Multi-Step)</a>
+    </nav>
+  </header>
+  <main>
+    <p>This site presents two versions of a hotel booking form. Please read the scenarios below, then complete <strong>both</strong> forms according to the specified details. Afterwards fill in the questionnaire provided at the bottom.</p>
+
+    <section id="form1-scenario">
+      <h2>Scenario for Form 1 (Single Page)</h2>
+      <pre>Book a hotel from RIU chain in Oslo for the dates 11.02–15.02.2026.
+Book a twin room without a sea view on the top floor.
+Food: non-vegetarian full board option.
+Allergy: lactose.
+Activities: hiking and wine tasting.
+Personal data: Jon Johanssen, d.o.b 14.01.2000, 0864 Oslo.</pre>
+      <a class="button" href="index1.html">Open Form 1</a>
+    </section>
+
+    <section id="form2-scenario">
+      <h2>Scenario for Form 2 (Multi-Step)</h2>
+      <pre>Book a hotel from the Hilton chain in Sidney for the dates 11.01–16.01.2026.
+Book a single room with a sea view on the 1st floor.
+Food: vegetarian breakfast option.
+Allergy: gluten.
+Activities: snorkeling and hiking.
+Personal data: Anna Hansen, d.o.b 14.10.2000, 0810 Oslo.</pre>
+      <a class="button" href="index2.html">Open Form 2</a>
+    </section>
+
+    <section id="questionnaire">
+      <h2>Post-Form Questionnaire</h2>
+      <p>After submitting <em>both</em> forms, please fill in this questionnaire:</p>
+      <p><a class="button" target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/d/e/1FAIpQLSfPAdG05wpbjPidv-0kEhr7SK1RA6TWXa0XlCsefC25AIzwnQ/viewform?usp=header">Open Questionnaire</a></p>
+    </section>
+    <footer>© Experiment – Hotel Booking Forms</footer>
+  </main>
+</body>
+</html>

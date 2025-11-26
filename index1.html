@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <title>Hotel Booking Form 1</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 1rem;
+      background-color: white;
+    }
+
+    h1 {
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    h2 {
+      margin-top: 0.2rem;
+      color: black;
+      border-bottom: 1px solid grey;
+      padding-bottom: 0.1rem;
+    }
+
+    label {
+      display: block;
+      margin-top: 0.5rem;
+      font-weight: 500;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="number"],
+    input[type="email"],
+    select,
+    textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    box-sizing: border-box;
+    border: 1px solid grey;
+    border-radius: 2px;
+    font-size: 1rem;
+}
+
+    input[type="radio"],
+    input[type="checkbox"] {
+    width: auto;
+    margin-right: 0.3rem;
+}
+
+    button {
+      margin-top: 1.5rem;
+      padding: 0.7rem 1.2rem;
+      font-size: 1rem;
+      background-color: green;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .radio-group {
+    margin-top: 1.5rem;        
+    margin-bottom: 1.5rem;  
+}
+
+  .radio-group > label {
+  display: flex !important;     
+  align-items: center;
+  gap: 0.8rem;                  
+  margin-bottom: 1rem;       
+  font-weight: 400;              
+}
+
+.checkbox-group label {
+  display: flex;              
+  align-items: center;
+  gap: 0.6rem;               
+  margin-bottom: 0.7rem;     
+}
+
+  </style>
+</head>
+
+<body>
+<h1>Hotel booking</h1>
+
+<form id="characterFormLong" action="#" method="post">
+
+  <h2>Basics</h2><br>
+  <label for="chain">Hotel Chain:</label>
+  <select id="chain" name="chain" required>
+    <option value="" disabled selected hidden>Select Hotel Chain</option>
+    <option>Riu</option>
+    <option>Mariott</option>
+    <option>Hilton</option>
+    <option>R2</option>
+    <option>Scandic</option>
+  </select><br>
+
+  <label for="city">City:</label>
+  <select id="city" name="city" required>
+    <option value="" disabled selected hidden>Select City</option>
+    <option>London</option>
+    <option>Oslo</option>
+    <option>Barcelona</option>
+    <option>Sidney</option>
+    <option>Shanghai</option>
+  </select><br>
+
+  <label for="checkin">Check-In Date:</label><br>
+  <input type="date" id="checkin" name="checkin" required><br><br>
+
+  <label for="checkout">Check-Out Date:</label><br>
+  <input type="date" id="checkout" name="checkout" required><br><br>
+
+  <h2>Room</h2><br>
+
+  <label for="type">Room type:</label>
+  <select id="type" name="type" required>
+    <option value="" disabled selected hidden>Choose room type</option>
+    <option>Twin room</option>
+    <option>Standard double room</option>
+    <option>Suite</option>
+    <option>Single room</option>
+    <option>Family room</option>
+  </select><br><br>
+
+  <label>Would you like a sea-view room?</label>
+  <div class="radio-group">
+    <label><input type="radio" name="sea_view" value="yes"> Yes</label>
+    <label><input type="radio" name="sea_view" value="no"> No</label>
+  </div>
+  <label for="floor">Floor choice:</label>
+  <select id="floor" name="floor" required>
+    <option value="" disabled selected hidden>Choose floor</option>
+    <option>Ground floor</option>
+    <option>1st</option>
+    <option>2nd</option>
+    <option>Top floor</option>
+  </select><br><br>
+
+
+  <h2>Food</h2><br>
+
+  <label for="food">Food option:</label>
+  <select id="food" name="food" required>
+    <option value="" disabled selected hidden>Choose food option</option>
+    <option>Breakfast</option>
+    <option>Half-board</option>
+    <option>Full board</option>
+    <option>All inclusive</option>
+  </select><br><br>
+
+  <label>Would you like a vegetarian option?</label>
+  <div class="radio-group">
+    <label><input type="radio" name="veg" id="veg-yes" value="yes"> Yes</label>
+    <label><input type="radio" name="veg" id="veg-no" value="no"> No</label>
+  </div>
+
+
+  <div class="checkbox-group">
+    <label>Allergies/intolerances?</label>
+    <label><input type="checkbox" name="allergi" value="nuts">Nuts</label>
+    <label><input type="checkbox" name="allergi" value="gluten">Gluten</label>
+    <label><input type="checkbox" name="allergi" value="lactose">Lactose</label>
+    <label><input type="checkbox" name="allergi" value="shellfish">Shellfish</label>
+  </div><br>
+
+  <h2>Activities & Extras</h2>
+  <div class="checkbox-group">
+    <label><input type="checkbox" name="activities" value="hiking"> Hiking</label>
+    <label><input type="checkbox" name="activities" value="sightseeing"> Sightseeing</label>
+    <label><input type="checkbox" name="activities" value="snorkeling">Snorkeling</label>
+    <label><input type="checkbox" name="activities" value="wine"> Wine tasting</label>
+  </div><br>
+
+  <h2>Personal Data</h2><br>
+
+  <label for="name">Full Name:</label>
+  <input type="text" id="name" name="name" required><br><br>
+
+  <label for="dob">Date of Birth:</label>
+  <input type="date" id="dob" name="dob" required><br><br>
+
+  <label for="city-adress">City:</label>
+  <input type="text" id="city-adress" name="city" required><br><br>
+
+  <label for="postcode">Postcode:</label>
+  <input type="text" id="postcode" name="postcode" required><br><br>
+
+  <button type="submit">Send</button>
+
+</form>
+
+<script>
+  let startTime;
+  window.addEventListener("load", () => {
+    startTime = Date.now();
+  });
+
+  document.getElementById("characterFormLong").addEventListener("submit", function (event) {
+    event.preventDefault();
+    const endTime = Date.now();
+    const timeSpent = ((endTime - startTime) / 1000).toFixed(2);
+    alert("Time spent on the form: " + timeSpent + " seconds");
+    console.log("Time spent on a one page simple form: ", timeSpent);
+  });
+</script>
+</body>
+</html>

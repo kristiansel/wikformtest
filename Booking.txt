@@ -1,0 +1,25 @@
+
+
+Form 1
+Book a hotel from RIU chain in Oslo for the dates 11.02-15.02.2026
+Book a twin room without a sea view on the top floor.
+For food, choose a non-vegetarian full board option. For allergies choose lactose. 
+For activities, choose hiking and wine tasting.
+Personal data: Jon Johanssen, d.o.b 14.01.2000, 0864 Oslo.
+
+<Link to form 1>
+
+
+Form 2
+Book a hotel from the Hilton chain in Sidney for the dates 11.01-16.01.2026.
+Book a single room with a sea view on the 1st floor.
+For food, choose a vegetarian breakfast option. For allergies mark a gluten allergy. 
+For activities, choose snorkeling and hiking.
+Personal data: Anna Hansen, d.o.b 14.10.2000, 0810 Oslo.
+
+<Link to form 2>
+
+
+
+After booking using the two versions of the form, please fill in this questionaire:
+https://docs.google.com/forms/d/e/1FAIpQLSfPAdG05wpbjPidv-0kEhr7SK1RA6TWXa0XlCsefC25AIzwnQ/viewform?usp=header
