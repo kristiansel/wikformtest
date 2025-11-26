@@ -2,13 +2,14 @@
 <html lang="no">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <title>Hotel Booking Form 1</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       max-width: 700px;
       margin: 0 auto;
-      padding: 1rem;
+      padding: 1rem 1.25rem 2.5rem;
       background-color: white;
     }
 
@@ -53,13 +54,14 @@
 
     button {
       margin-top: 1.5rem;
-      padding: 0.7rem 1.2rem;
+      padding: 0.85rem 1.2rem;
       font-size: 1rem;
       background-color: green;
       color: white;
       border: none;
-      border-radius: 20px;
+      border-radius: 24px;
       cursor: pointer;
+      transition: background-color .2s ease, transform .15s ease;
     }
 
     button:hover {
@@ -85,6 +87,20 @@
   gap: 0.6rem;               
   margin-bottom: 0.7rem;     
 }
+
+    /* Accessibility focus styles */
+    input:focus, select:focus, textarea:focus, button:focus { outline:2px solid #0b5fff; outline-offset:2px; }
+    nav.top-nav { margin:.25rem 0 1rem; }
+    nav.top-nav a { text-decoration:none; color:#0b5fff; font-size:.9rem; }
+    button:active { transform: scale(.97); }
+    @media (max-width: 560px) {
+      body { padding:.75rem .75rem 2rem; }
+      h1 { font-size:1.4rem; }
+      h2 { font-size:1.1rem; }
+      button { width:100%; }
+      .radio-group > label, .checkbox-group label { margin-bottom:.55rem; }
+    }
+    @media (prefers-reduced-motion: reduce) { button { transition:none; } }
 
   </style>
 </head>
